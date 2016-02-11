@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class CreateEventsTable extends Migration
+class CreateShowcasesTable extends Migration
 {
 
     public function up()
@@ -19,6 +19,7 @@ class CreateEventsTable extends Migration
             $table->string('datasets')->nullable();
             $table->string('url_presentation')->nullable();
             $table->string('url_website')->nullable();
+            $table->string('url_github')->nullable();
             $table->timestamps();
         });
     }

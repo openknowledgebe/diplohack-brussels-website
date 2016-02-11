@@ -54,7 +54,8 @@ class Post extends Model
      * Relations
      */
     public $belongsTo = [
-        'user' => ['Backend\Models\User']
+        'user' => ['Backend\Models\User'],
+        'event' => ['Teamswag\Appsforx\Models\Event']
     ];
 
     public $belongsToMany = [
@@ -66,6 +67,7 @@ class Post extends Model
     ];
 
     public $attachMany = [
+        'avatar' => ['System\Models\File', 'order' => 'sort_order'],
         'featured_images' => ['System\Models\File', 'order' => 'sort_order'],
         'content_images' => ['System\Models\File']
     ];

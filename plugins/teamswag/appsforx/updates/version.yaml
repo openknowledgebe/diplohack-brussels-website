@@ -3,7 +3,8 @@
     - create_showcases_table.php
     - create_locations_table.php
     - seed_tables.php
-1.0.2:
-    - Updating showcase table
-    - update_showcases_table.php
+    - Add events sessions and speakers
+    - create_events_table.php
+    - create_sessions_table.php
+    - create_session_speaker_pivot_table.php
     

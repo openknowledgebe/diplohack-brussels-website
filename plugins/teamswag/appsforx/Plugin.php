@@ -29,6 +29,8 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
+            'teamswag.appsforx.access_events' => ['tab' => 'Events', 'label' => 'teamswag.appsforx::lang.event.access_events'],
+            'teamswag.appsforx.access_speakers' => ['tab' => 'Speaker', 'label' => 'teamswag.appsforx::lang.event.access_speakers'],
             'teamswag.appsforx.access_showcases' => ['tab' => 'Showcase', 'label' => 'teamswag.appsforx::lang.event.access_showcases']
         ];
     }
@@ -36,7 +38,11 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Teamswag\Appsforx\Components\Showcases' => 'showcases'
+            'Teamswag\Appsforx\Components\Showcases' => 'showcases',
+            'Teamswag\Appsforx\Components\Events' => 'events',
+            'Teamswag\Appsforx\Components\Speakers' => 'speakers',
+            'Teamswag\Appsforx\Components\Sessions' => 'sessions',
+            'Teamswag\Appsforx\Components\Event' => 'event'
         ];
     }
 
@@ -51,20 +57,38 @@ class Plugin extends PluginBase
             'appsforx' => [
                 'label'       => 'Appsfor X',
                 'url'         => Backend::url('teamswag/appsforx/showcases'),
-                'icon'        => 'icon-pencil',
+                'icon'        => 'icon-rocket',
                 'permissions' => ['teamswag.appsforx.*'],
                 'order'       => 500,
 
                 'sideMenu' => [
-                    'events' => [
+                    'showcases' => [
                         'label'       => 'Showcases',
-                        'icon'        => 'icon-copy',
+                        'icon'        => 'icon-file-code-o',
                         'url'         => Backend::url('teamswag/appsforx/showcases'),
+                        'permissions' => ['* ']
+                    ],
+                    'events' => [
+                        'label'       => 'Events',
+                        'icon'        => 'icon-calendar',
+                        'url'         => Backend::url('teamswag/appsforx/events'),
+                        'permissions' => ['* ']
+                    ],
+                    'sessions' => [
+                        'label'       => 'Sessions',
+                        'icon'        => 'icon-comments-o',
+                        'url'         => Backend::url('teamswag/appsforx/sessions'),
+                        'permissions' => ['* ']
+                    ],
+                    'speakers' => [
+                        'label'       => 'Speakers',
+                        'icon'        => 'icon-users',
+                        'url'         => Backend::url('teamswag/appsforx/speakers'),
                         'permissions' => ['* ']
                     ],
                     'locations' => [
                         'label'       => 'Locations',
-                        'icon'        => 'icon-copy',
+                        'icon'        => 'icon-crosshairs',
                         'url'         => Backend::url('teamswag/appsforx/locations'),
                         'permissions' => ['* ']
                     ]

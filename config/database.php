@@ -56,7 +56,7 @@ return [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'port'      => '',
-            'database'  => 'appsforghent',
+            'database'  => 'appsforx',
             'username'  => 'root',
             'password'  => 'bitnami',
             'charset'   => 'utf8',
