@@ -3,7 +3,7 @@
 use Cms\Classes\ComponentBase;
 use Teamswag\Appsforx\Models\Session;
 
-class Event extends ComponentBase
+class Ssession extends ComponentBase
 {
     public $session;
 
@@ -17,16 +17,18 @@ class Event extends ComponentBase
 
     public function defineProperties()
     {
-        return [
-        ];
+        return [];
     }
 
 
     public function onRun()
     {
         $slug = $this->param('slug');
-        $this->session = Session::where('slug', $slug)->first()->load('speakers');
-        $this->session['start'] = gmdate("H\hi", strtotime($this->session['start_time']));
-        $this->session['end'] = gmdate("H\hi", strtotime($this->session['start_time']) + ($this->session['duration'] * 60));
+        
+        if($slug) {
+            $this->session = Session::where('slug', $slug)->first()->load('speakers');
+            $this->session['start'] = gmdate("H\hi", strtotime($this->session['start_time']));
+            $this->session['end'] = gmdate("H\hi", strtotime($this->session['start_time']) + ($this->session['duration'] * 60));
+        }
     }
 }

@@ -14,8 +14,7 @@ fields:
     description:
         label: Description
         cssClass: field-slim
-        type: codeeditor
-        language: markdown
+        type: textarea
         showGutter: false
         wrapWords: true
         fontSize: 13

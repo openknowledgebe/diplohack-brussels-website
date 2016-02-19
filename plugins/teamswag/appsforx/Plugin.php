@@ -42,7 +42,7 @@ class Plugin extends PluginBase
             'Teamswag\Appsforx\Components\Events' => 'events',
             'Teamswag\Appsforx\Components\Speakers' => 'speakers',
             'Teamswag\Appsforx\Components\Sessions' => 'sessions',
-            'Teamswag\Appsforx\Components\Event' => 'event'
+            'Teamswag\Appsforx\Components\Ssession' => 'ssession'
         ];
     }
 
@@ -60,18 +60,17 @@ class Plugin extends PluginBase
                 'icon'        => 'icon-rocket',
                 'permissions' => ['teamswag.appsforx.*'],
                 'order'       => 500,
-
                 'sideMenu' => [
-                    'showcases' => [
-                        'label'       => 'Showcases',
-                        'icon'        => 'icon-file-code-o',
-                        'url'         => Backend::url('teamswag/appsforx/showcases'),
-                        'permissions' => ['* ']
-                    ],
                     'events' => [
                         'label'       => 'Events',
                         'icon'        => 'icon-calendar',
                         'url'         => Backend::url('teamswag/appsforx/events'),
+                        'permissions' => ['* ']
+                    ],
+                    'locations' => [
+                        'label'       => 'Locations',
+                        'icon'        => 'icon-crosshairs',
+                        'url'         => Backend::url('teamswag/appsforx/locations'),
                         'permissions' => ['* ']
                     ],
                     'sessions' => [
@@ -86,10 +85,10 @@ class Plugin extends PluginBase
                         'url'         => Backend::url('teamswag/appsforx/speakers'),
                         'permissions' => ['* ']
                     ],
-                    'locations' => [
-                        'label'       => 'Locations',
-                        'icon'        => 'icon-crosshairs',
-                        'url'         => Backend::url('teamswag/appsforx/locations'),
+                    'showcases' => [
+                        'label'       => 'Showcases',
+                        'icon'        => 'icon-file-code-o',
+                        'url'         => Backend::url('teamswag/appsforx/showcases'),
                         'permissions' => ['* ']
                     ]
                 ]

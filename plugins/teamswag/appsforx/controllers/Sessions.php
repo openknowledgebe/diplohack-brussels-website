@@ -28,8 +28,8 @@ class Sessions extends Controller
         BackendMenu::setContextSideMenu('new_session');
 
         $this->bodyClass = 'compact-container';
-        $this->addCss('/plugins/rainlab/blog/assets/css/rainlab.blog-preview.css');
-        $this->addJs('/plugins/rainlab/blog/assets/js/post-form.js');   
+        $this->addCss('/plugins/teamswag/appsforx/assets/css/rainlab.blog-preview.css');
+        $this->addJs('/plugins/teamswag/appsforx/assets/js/post-form.js');   
 
         return $this->asExtension('FormController')->create();
     }
@@ -37,7 +37,8 @@ class Sessions extends Controller
     public function update($recordId = null)
     {
         $this->bodyClass = 'compact-container';
-        $this->addCss('/plugins/rainlab/blog/assets/css/rainlab.blog-preview.css');
+        $this->addCss('/plugins/teamswag/appsforx/assets/css/rainlab.blog-preview.css');
+        $this->addJs('/plugins/teamswag/appsforx/assets/js/post-form.js');  
 
         return $this->asExtension('FormController')->update($recordId);
     }
