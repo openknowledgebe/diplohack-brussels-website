@@ -38,11 +38,12 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Teamswag\Appsforx\Components\Showcases' => 'showcases',
-            'Teamswag\Appsforx\Components\Events' => 'events',
+            'Teamswag\Appsforx\Components\Showcases'=> 'showcases',
+            'Teamswag\Appsforx\Components\Events'   => 'events',
             'Teamswag\Appsforx\Components\Speakers' => 'speakers',
             'Teamswag\Appsforx\Components\Sessions' => 'sessions',
-            'Teamswag\Appsforx\Components\Ssession' => 'ssession'
+            'Teamswag\Appsforx\Components\Ssession' => 'ssession',
+            'Teamswag\Appsforx\Components\Sevent'   => 'sevent'
         ];
     }
 

@@ -32,7 +32,7 @@ class Events extends ComponentBase
 
     protected function loadEvents()
     {
-        $events = Event::all()->load('Location')->toArray();
+        $events = Event::all()->toArray();
 
         return $events;
     }

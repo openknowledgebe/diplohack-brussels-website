@@ -1,8 +1,11 @@
-{% set sessions = __SELF__.sessions %}
-{% set locations = __SELF__.locations %}
+{% set sevent = __SELF__.sevent %}
 
-{% for session in sessions %}
+{{ sevent.name }}
+<br>{{ sevent.description }}
+
+{% for session in sevent.Session %}
 <p>
+    hi
     {% if session.is_global %} 
         Global session:
     {% else %}

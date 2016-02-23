@@ -20,7 +20,7 @@ class CreateSessionsTable extends Migration
             $table->integer('location_id')->unsigned()->nullable();
             $table->integer('event_id')->unsigned()->nullable();
             $table->timestamps();
-            $table->string('slug')->nullable()->index();;
+            $table->string('slug')->nullable()->index();
             $table->string('color')->nullable();
             $table->boolean('is_global');
             $table->text('content');

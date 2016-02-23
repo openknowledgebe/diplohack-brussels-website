@@ -4,7 +4,15 @@ layout = "default"
 is_hidden = 0
 meta_title = "Events"
 
-[event]
+[events]
+==
+<?php
+function onStart()
+{
+    $this['page_title'] = 'Events';
+    $this['header_bg'] = '/assets/banners/gewoon/banner-26.png';
+}
+?>
 ==
 <div id="showcase-content" class="section section-light">
     <hr class="hr-white" />

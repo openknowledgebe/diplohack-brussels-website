@@ -1,15 +1,15 @@
-title = "Session"
-url = "/session/:slug"
+title = "Event"
+url = "/event/:slug"
 layout = "default"
 is_hidden = 0
-meta_title = "Session"
+meta_title = "Event"
 
-[ssession]
+[sevent]
 ==
 <?php
 function onStart()
 {
-    $this['page_title'] = 'Session';
+    $this['page_title'] = 'Single Event';
     $this['header_bg'] = '/assets/banners/gewoon/banner-26.png';
 }
 ?>
@@ -18,7 +18,7 @@ function onStart()
     <hr class="hr-white" />
     <div class="container">
         <div class="row info-cards">
-            {% component 'ssession' %}
+            {% component 'sevent' %}
         </div>
     </div>
 </div>
