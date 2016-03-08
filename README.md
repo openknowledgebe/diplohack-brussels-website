@@ -85,7 +85,7 @@ There are 5 types of entities that are used by the AppsForX module:
     - function
     - organisation
     - website 
-- Showcases: Showcases are individual application which you want to show on your website (for example the Projects of last year's event)
+- Showcases: Showcases are individual applications which you want to show on your website (for example the projects of last year's event)
     - id
     - name
     - priority
@@ -109,7 +109,7 @@ This is the component that will return a single Event, along with the Sessions t
 
 **Locations**
 
-Locations don't have a component to render them, as they are only used in conjunction with Sessions or Events. 
+Locations don't have a component to render them, as they are only used in conjunction with Sessions. 
 
 **Sessions**
 

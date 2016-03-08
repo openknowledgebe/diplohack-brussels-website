@@ -10,7 +10,8 @@ fields:
     description:
         label: Description
         cssClass: field-slim
-        type: textarea
+        type: codeeditor
+        language: markdown
         showGutter: false
         wrapWords: true
         fontSize: 13

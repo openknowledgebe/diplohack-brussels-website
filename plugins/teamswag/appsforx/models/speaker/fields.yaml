@@ -10,6 +10,7 @@ fields:
     priority:
         label: Priority
         type: number
+        default: 0
 
     description:
         label: Description
