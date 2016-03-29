@@ -1,3 +1,14 @@
+## AppsForX
+
+AppsForX is a package which you can easily fork for organising your own hackaton. It sets up a website based on OctoberCMS comparable to [2016.appsforghent.be](http://2016.appsforghent.be), including several modules such as a Blog, the ability to create Events, Sessions and Speakers, and a Twitter Wall.
+
+### Requirements
+
+- Apache
+- PHP 5.6+
+- Some form of SQL database
+- mod rewrite
+
 ## Getting started
 
 ### Step 0: clone repository
@@ -190,4 +201,4 @@ Other components are all analogue with this method.
 
 AppsForX makes use of a slightly modified version of the Rainlab Blog Module, for this reason it is advised to not upgrade the Blog module if you want to retain the (albeit little) extra functionality.
 
-The key difference is that a blogpost can be linked to a certain Session, for the rest it is pretty much the default Rainlab Blog plugin.
+The key difference is that a blogpost can be linked to a certain Session, for the rest it is pretty much the default Rainlab Blog plugin with a modified theme.
