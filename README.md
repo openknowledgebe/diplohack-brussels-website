@@ -27,7 +27,27 @@ For your local development server, you’ll want to change the config/database f
 
 `php artisan october:up`
 
-### Step 4: Default credentials
+### Step 4: Write access
+
+The following directories need to be writable:
+
+- app/storage
+- themes
+- uploads
+
+Terminal commands: 
+
+```
+chown -R root:www-data app/storage
+chown -R root:www-data themes
+chown -R root:www-data uploads
+
+chmod -R 775 app/storage/
+chmod -R 775 themes
+chmod -R 775 uploads
+```
+
+### Step 5: Default credentials
 
 You can now access your webpage from the root of your project, and the backend via `root/backend`
 
@@ -37,7 +57,7 @@ Password: admin
 
 It is advised you change these ASAP.
 
-### Step 5: Configure Twitterwall
+### Step 6: Configure Twitterwall
 
 To configure your Twitterwall, go to `themes/appsforghent/assets/vendor/Tweetie/api/config.example.php`
 
