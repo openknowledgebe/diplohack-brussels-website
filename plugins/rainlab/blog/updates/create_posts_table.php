@@ -20,7 +20,7 @@ class CreatePostsTable extends Migration
             $table->text('content_html')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->boolean('published')->default(false);
-            $table->integer('event_id');
+            $table->integer('event_id')->nullable();
             $table->timestamps();
         });
     }
