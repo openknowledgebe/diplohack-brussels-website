@@ -1,5 +1,5 @@
-title = "Nieuws"
-url = "/nieuwspost/:slug"
+title = "News"
+url = "/newspost/:slug"
 layout = "default"
 is_hidden = 0
 
@@ -7,11 +7,13 @@ is_hidden = 0
 slug = "{{ :slug }}"
 categoryPage = "nieuws/category"
 ==
+<?php
 function onStart()
 {
     $this['page_title'] = 'NIEUWS';
     $this['header_bg'] = '/assets/banners/gewoon/banner-23.png';
 }
+?>
 ==
 <div id="news-tabs">
     <div class="container">
