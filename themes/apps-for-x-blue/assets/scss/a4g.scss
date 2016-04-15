@@ -998,6 +998,21 @@ footer {
                 margin-top: 15px;
             }
         }
+
+        .row {
+            padding:10px;
+            .session {
+                margin:10px 0;
+
+                h3 {
+                    margin-top:0;
+                }
+
+                p:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 

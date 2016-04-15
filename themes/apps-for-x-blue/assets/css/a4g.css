@@ -644,6 +644,14 @@ footer {
     #showcase-content .container > .row > div {
       margin-bottom: 15px;
       margin-top: 15px; } }
+  #showcase-content .container .row {
+    padding: 10px; }
+    #showcase-content .container .row .session {
+      margin: 10px 0; }
+      #showcase-content .container .row .session h3 {
+        margin-top: 0; }
+      #showcase-content .container .row .session p:last-of-type {
+        margin-bottom: 0; }
 
 /**
  * Components
