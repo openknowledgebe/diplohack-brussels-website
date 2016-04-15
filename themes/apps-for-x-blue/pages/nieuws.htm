@@ -1,5 +1,5 @@
-title = "Nieuws"
-url = "/nieuws/:page?"
+title = "News"
+url = "/news/:page?"
 layout = "default"
 is_hidden = 0
 
@@ -8,14 +8,16 @@ pageNumber = "{{ :page }}"
 postsPerPage = 10
 noPostsMessage = "Geen nieuwsberichten"
 sortOrder = "published_at desc"
-categoryPage = "nieuws/category/"
-postPage = "/nieuwspost"
+categoryPage = 404
+postPage = 404
 ==
+<?php
 function onStart()
 {
-    $this['page_title'] = 'NIEUWS';
+    $this['page_title'] = 'NEWS';
     $this['header_bg'] = '/assets/banners/gewoon/testbanner1.png';
 }
+?>
 ==
 <div id="news-tabs">
     <div class="container">
