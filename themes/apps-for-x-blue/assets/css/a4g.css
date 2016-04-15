@@ -436,7 +436,7 @@ footer {
  * News page
  */
 #news-tabs {
-  background-color: #e3e5e5; }
+  background-color: #289adb; }
   #news-tabs .container {
     padding: 0; }
     #news-tabs .container .news-tab {
@@ -447,12 +447,12 @@ footer {
         height: 50px;
         width: 50px; }
       #news-tabs .container .news-tab a {
-        color: #a1a5a8; }
+        color: #FFF; }
         #news-tabs .container .news-tab a:hover {
-          color: #666666; }
+          color: #354a5e; }
       #news-tabs .container .news-tab.active {
-        background-color: #F0F1F1;
-        color: #666666; }
+        background-color: #FFF;
+        color: #289adb; }
         #news-tabs .container .news-tab.active a {
           color: #666666; }
 

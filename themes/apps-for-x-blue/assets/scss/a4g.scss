@@ -56,12 +56,14 @@ $color-light-dark: darken($color-light, 5%);
 $color-medium: #CACBCD;
 $color-dark: #231F20;
 $color-blue: #289adb;
+$color-dark-blue: #354a5e;
 
 $font-color-white: #FFF;
 $font-color-med: #C9CBCD;
 $font-color-medium: darken($font-color-med, 15%);
 $font-color-dark: #666666;
 $font-color-alt: $color-blue;
+$font-color-alt-dark: $color-dark-blue;
 $font-color-alt-red: #FF3232;
 
 html, body, nav {
@@ -665,7 +667,7 @@ footer {
  */
  
 #news-tabs {
-    background-color: $color-light-dark;
+    background-color: $color-blue;
     
     .container {
         padding: 0;
@@ -681,16 +683,16 @@ footer {
             }
             
             a {
-                color: $font-color-medium;
+                color: $color-white;
                 
                 &:hover {
-                    color: $font-color-dark;
+                    color: $font-color-alt-dark;
                 }
             }
             
             &.active {
-                background-color: $color-light;
-                color: $font-color-dark;
+                background-color: $color-white;
+                color: $color-blue;
                 
                 a {
                     color: $font-color-dark;
