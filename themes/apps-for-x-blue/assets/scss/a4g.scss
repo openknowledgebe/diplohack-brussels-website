@@ -55,7 +55,7 @@ $color-light: #F0F1F1;
 $color-light-dark: darken($color-light, 5%);
 $color-medium: #CACBCD;
 $color-dark: #231F20;
-$color-blue: #00DBC0;
+$color-blue: #289adb;
 
 $font-color-white: #FFF;
 $font-color-med: #C9CBCD;
@@ -1018,10 +1018,19 @@ footer {
     &.chip-blue {
         background-color: $font-color-alt;
     }
+
+    &.chip-white {
+        background-color: $font-color-white;
+        color:$color-blue;
+
+        &:hover {
+          background-color: darken($font-color-alt, 6%);
+        }
+    }
     
     &.chip-light-blue {
         background-color: lighten($font-color-alt, 3%);
-        
+
         &:hover {
             background-color: darken($font-color-alt, 6%);
         }
@@ -1062,7 +1071,7 @@ hr {
     }
     
     &.hr-blue:after {
-        background: url('../svg/spacers/lip-green.svg') no-repeat top center;
+        background: url('../svg/spacers/lip-blue.svg') no-repeat top center;
     }
     
     &.hr-light:after {
@@ -1155,8 +1164,8 @@ hr {
     
     input[type="submit"] {
         width: 30%;
-        background-color: $font-color-alt-red;
-        color: $color-white;
+        background-color: $color-white;
+        color: $color-blue;
         font-family: $font;
         font-weight: 400;
     }
