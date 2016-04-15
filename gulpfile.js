@@ -7,22 +7,22 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 
 var paths = {
-  sass: ['./assets/scss/**/*.scss']
+  sass: ['themes/apps-for-x-blue/assets/scss/*.scss']
 };
 
 gulp.task('default', ['sass']);
 
 gulp.task('sass', function(done) {
-  gulp.src('./themes/appsforghent/assets/scss/a4g.scss')
+  gulp.src('./themes/apps-for-x-blue/assets/scss/a4g.scss')
     .pipe(sass({
       errLogToConsole: true
     }))
-    .pipe(gulp.dest('./themes/appsforghent/assets/css/'))
+    .pipe(gulp.dest('./themes/apps-for-x-blue/assets/css/'))
     .pipe(minifyCss({
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./themes/appsforghent/assets/css/'))
+    .pipe(gulp.dest('./themes/apps-for-x-blue/assets/css/'))
     .on('end', done);
 });
 
@@ -40,7 +40,7 @@ function build() {
 gulp.task('scripts', scripts);
 function scripts() {
     return gulp
-        .src('./themes/appsforghent/assets/javascript/*.js')
+        .src('./themes/apps-for-x-blue/assets/javascript/*.js')
         .pipe(concat('app_prod.js'))
-        .pipe(gulp.dest('./themes/appsforghent/assets/javascript'));
+        .pipe(gulp.dest('./themes/apps-for-x-blue/assets/javascript'));
 }
