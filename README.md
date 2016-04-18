@@ -34,13 +34,24 @@ For your local development server, you’ll want to change the config/database f
 
 `config/database.php`
 
-### Step 3: Migrate the database
+If you want to work with SQLite, create the database.sqlite file in your storage folder.
+
+### Step 3: Creating some necessary folders
+
+In the storage/cms folder, check if the following folders exist:
+- cache
+- combiner
+- twig
+
+If they do not exist, create these folders but don't put anything in them.
+
+### Step 4: Migrate the database
 
 `php artisan october:up`
 
-### Step 4: Write access
+### Step 5: Write access
 
-The following directories need to be writable:
+The following directories need to be writable (make sure they exist!):
 
 - app/storage
 - themes
@@ -58,7 +69,7 @@ chmod -R 775 themes
 chmod -R 775 uploads
 ```
 
-### Step 5: Default credentials
+### Step 6: Default credentials
 
 You can now access your webpage from the root of your project, and the backend via `root/backend`
 
@@ -68,7 +79,7 @@ Password: admin
 
 It is advised you change these ASAP.
 
-### Step 6: Configure Twitterwall
+### Step 7: Configure Twitterwall
 
 To configure your Twitterwall, go to `themes/appsforghent/assets/vendor/Tweetie/api/config.example.php`
 
@@ -202,3 +213,10 @@ Other components are all analogue with this method.
 AppsForX makes use of a slightly modified version of the Rainlab Blog Module, for this reason it is advised to not upgrade the Blog module if you want to retain the (albeit little) extra functionality.
 
 The key difference is that a blogpost can be linked to a certain Session, for the rest it is pretty much the default Rainlab Blog plugin with a modified theme.
+
+### Step 8: Making your own theme
+
+If you want to make your own theme, feel free to do so! You can save this theme in the themes folder.
+Feel free to make a copy of apps-for-x-blue, change the name and tinker somewhat in it. Don't forget to put up `gulp watch` in your terminal.
+
+The only remark here is that **you should not forget to update the gulpfile** to make sure the correct paths are referenced, as it is currently set for the apps-for-x-blue theme.
