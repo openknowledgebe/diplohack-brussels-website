@@ -19,8 +19,8 @@ selenium.php
 /modules/*
 /node_modules
 /node_modules/*
-/themes/appsforghent/vendor
-/themes/appsforghent/vendor/*
+/themes/diplohack-brussels/vendor
+/themes/diplohack-brussels/vendor/*
 /storage
 /storage/*
 .env
