@@ -94,10 +94,13 @@ h4 {
       margin-bottom: 0;
       text-align: center; }
     .section.section-dashed h4.dashed_h4 {
+      text-transform: none;
       background-color: #FFF;
       color: #231F20;
       padding: 40px 10px 30px 10px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-family: NeoSansLight, sans-serif;
+      font-weight: 900; }
     .section.section-dashed .dashed_text {
       margin-top: 0;
       margin-bottom: 0;
