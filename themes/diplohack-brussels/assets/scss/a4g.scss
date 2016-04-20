@@ -160,10 +160,13 @@ h4 {
         }
 
         h4.dashed_h4 {
+            text-transform: none;
             background-color: $color-white;
             color: $color-dark;
             padding:40px 10px 30px 10px;
             margin-bottom:0;
+            font-family: NeoSansLight, sans-serif;
+            font-weight:900;
         }
 
         .dashed_text {
