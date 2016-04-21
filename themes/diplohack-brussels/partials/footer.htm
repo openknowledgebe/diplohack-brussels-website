@@ -1,5 +1,5 @@
 ==
-<footer>
+<footer class="section section-dashed">
     <hr class=
     "{{ this.page.title == 'Home' ? 'hr-white' :
      this.page.title == 'About' ? 'hr-white' :
@@ -7,21 +7,27 @@
       'hr-light'}}" />
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div style="margin:0 auto;">
-                    <a href="http://www.openknowledge.be"><!--<img src="{{ 'assets/png/gent.png'|theme }}">-->
-                    <span class="light">&copy; 2016 Open Knowledge Belgium</span></a>
+            <div class="col-md-3 col-sm-12 col-xs-12 dashed_text">
+                <div style="padding:10px 0 10px 10px;">
+                    <a href="http://english.eu2016.nl/"><img src="{{ 'assets/png/eunl.png'|theme }}" alt="EUNL" style="padding-left:10px; width:250%;"></a>
+                    <a href="http://openknowledge.be"><img src="{{ 'assets/png/logo-osoc.png'|theme }}" alt="Open Knowledge BE" style="margin-left:50%; width: 50%;"></a>
                 </div>
             </div>
-            <div class="col-md-offset-1 col-md-3 col-sm-6 col-xs-12">
-                <div style="margin:0 auto;">
-                    <a href="https://twitter.com/EU2016NL"><img src="{{ 'assets/svg/twitter.svg'|theme }}"></a>
+            <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12 dashed_text">
+                <div style="margin:0 auto; padding:15px; background-color:white;">
+                    <a href="https://twitter.com/EU2016NL"><i class="fa fa-twitter fa-2x icon-padding"></i></a>
+                    <a href="https://www.instagram.com/eu2016nl/"><i class="fa fa-instagram fa-2x icon-padding"></i></a>
+                    <a href="https://www.youtube.com/channel/UCAnfypd0o2jJj73n0XvlErg"><i class="fa fa-youtube fa-2x icon-padding"></i></a>
+                    <a href="https://www.flickr.com/photos/eu2016nl/"><i class="fa fa-flickr fa-2x icon-padding"></i></a>
+                    <a href="https://twitter.com/hashtag/diplohack">#DIPLOHACK</a>
                 </div>
             </div>
-            <div class="col-md-offset-1 col-md-3 col-sm-6 col-xs-12">
-                <span style="margin:0 auto;">
-                    <span class="light">Source code on</span>&nbsp;<a href="https://github.com/openknowledgebe/diplohack-brussels-website" target="_blank">Github</a><br>
-                    <a href="https://github.com/openknowledgebe/diplohack-brussels-website/blob/master/CONTRIBUTORS.md" target="_blank">Contributers</a>
+            <div class="col-md-offset-1 col-md-3 col-sm-12 col-xs-12 dashed_text">
+                <span style="padding:10px;">
+                    <span style="font-size:10px;">
+                        <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://camo.githubusercontent.com/bcf3a6ab4e230bba5dccd17c141539d8294228ff/687474703a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792d73612f342e302f38387833312e706e67" alt="Creative Commons License" data-canonical-src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>
+                        Source code on</span>&nbsp;<a href="https://github.com/openknowledgebe/diplohack-brussels-website" target="_blank" style="font-size:10px;">Github</a>
+                    <a href="https://github.com/openknowledgebe/diplohack-brussels-website/blob/master/CONTRIBUTORS.md" target="_blank" style="font-size:10px;"> | Contributors</a>
                 </span>
             </div>
         </div>

@@ -19,16 +19,6 @@ function onStart()
 }
 ?>
 ==
-<div id="news-tabs">
-    <div class="container">
-        <div class="news-tab active">
-            <img src="{{ 'assets/svg/blog.svg'|theme }}"> Blog
-        </div>
-        <div class="news-tab">
-            <a href="{{ 'twitter'|page }}"><img src="{{ 'assets/svg/twitter.svg'|theme }}"> Twitter</a>
-        </div>
-    </div>
-</div>
 <div id="news-content" class="section section-light">
     <div class="container">
          {% component 'blogPosts' %}
