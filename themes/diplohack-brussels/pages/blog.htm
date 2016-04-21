@@ -1,16 +1,16 @@
-title = "News"
-url = "/newspost/:slug"
+title = "Blogpost"
+url = "/blogpost/:slug"
 layout = "default"
 is_hidden = 0
 
 [blogPost]
 slug = "{{ :slug }}"
-categoryPage = "nieuws/category"
+categoryPage = "blog/category"
 ==
 <?php
 function onStart()
 {
-    $this['page_title'] = 'Newspost';
+    $this['page_title'] = 'Blogpost';
     $this['header_bg'] = '';
 }
 ?>
