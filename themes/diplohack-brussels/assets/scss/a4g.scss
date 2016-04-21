@@ -62,7 +62,7 @@ a, a:active, a:focus {
 
 p {
     font-family: $font-light;
-    font-weight:300;
+    font-weight:400;
 }
 
 h1 {
@@ -118,6 +118,16 @@ h4 {
             text-align: center;
         }
 
+        .home_first_text {
+            background-color: $color-white;
+            color: $color-green;
+            font-weight:300;
+            font-size:20px;
+            padding:40px 10px 30px 10px;
+            margin-bottom:0;
+            text-align: center;
+        }
+
         h4.dashed_h4 {
             text-transform: none;
             background-color: $color-white;
@@ -132,7 +142,7 @@ h4 {
             margin-bottom:0;
             background-color: $color-white;
             color: $color-dark;
-            padding:0 10px 30px 10px;
+            padding:0 20px 30px 20px;
         }
 
         h2 {
@@ -158,6 +168,23 @@ h4 {
 
         h2 {
             color:$color-green;
+        }
+
+        .dashed_text {
+            margin-top:0;
+            margin-bottom:0;
+            background-color: $color-white;
+            color: $color-dark;
+            padding:40px;
+        }
+
+        h4.dashed_h4 {
+            text-transform: none;
+            background-color: $color-white;
+            color: $color-dark;
+            padding:40px 40px 0 40px;
+            margin-bottom:0;
+            font-weight:400;
         }
     }
     
@@ -1073,11 +1100,12 @@ footer {
 
 .chip {
     color: $font-color-white;
-    padding: 0.5em 1em;
+    padding: 1em 1.5em;
     margin: 0.2em;
     display: inline-block;
     border:1px solid $color-blue;
-        
+    font-weight:500;
+
     &.chip-red {
         background-color: $font-color-alt-green;
     }
