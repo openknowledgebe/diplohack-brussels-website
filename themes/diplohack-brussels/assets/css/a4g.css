@@ -34,7 +34,7 @@ a, a:active, a:focus {
 
 p {
   font-family: Roboto, sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 h1 {
   font-size: 3.7em;
@@ -73,6 +73,14 @@ h4 {
       padding: 40px 10px 30px 10px;
       margin-bottom: 0;
       text-align: center; }
+    .section.section-dashed .home_first_text {
+      background-color: #FFF;
+      color: #09d35f;
+      font-weight: 300;
+      font-size: 20px;
+      padding: 40px 10px 30px 10px;
+      margin-bottom: 0;
+      text-align: center; }
     .section.section-dashed h4.dashed_h4 {
       text-transform: none;
       background-color: #FFF;
@@ -85,7 +93,7 @@ h4 {
       margin-bottom: 0;
       background-color: #FFF;
       color: #231F20;
-      padding: 0 10px 30px 10px; }
+      padding: 0 20px 30px 20px; }
     .section.section-dashed h2 {
       padding: 20px;
       background-color: #FFF;
@@ -99,6 +107,19 @@ h4 {
     background-color: #F0F1F1; }
     .section.section-light h2 {
       color: #09d35f; }
+    .section.section-light .dashed_text {
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: #FFF;
+      color: #231F20;
+      padding: 40px; }
+    .section.section-light h4.dashed_h4 {
+      text-transform: none;
+      background-color: #FFF;
+      color: #231F20;
+      padding: 40px 40px 0 40px;
+      margin-bottom: 0;
+      font-weight: 400; }
   .section.section-dark {
     background-color: #231F20; }
 
@@ -697,10 +718,11 @@ footer {
  */
 .chip {
   color: #FFF;
-  padding: 0.5em 1em;
+  padding: 1em 1.5em;
   margin: 0.2em;
   display: inline-block;
-  border: 1px solid #9ac4f8; }
+  border: 1px solid #9ac4f8;
+  font-weight: 500; }
   .chip.chip-red {
     background-color: #09d35f; }
   .chip.chip-blue {
