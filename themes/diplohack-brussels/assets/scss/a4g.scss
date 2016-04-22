@@ -602,11 +602,9 @@ footer {
 
 #page-intro {
     &.bg-container {
-        background: url('../png/bg.png') no-repeat center center;
-        background-size: cover;
-        
+
         h1 {
-            margin-top: 50px;
+            margin-top: 25px;
             
             @media screen and (max-width: 767px) {
                 margin-top: 36px;
@@ -625,7 +623,7 @@ footer {
     }
    
     .container {    
-        height: 350px;
+        height: 225px;
             
         .row {
             height: 90%; 
