@@ -170,6 +170,19 @@ h4 {
             color:$color-green;
         }
 
+        .coc--top {
+            padding:40px;
+            text-transform: none;
+            background-color: $color-white;
+            color: $color-dark;
+            margin-bottom:0;
+            font-weight:500;
+        }
+
+        .coc--h4 {
+            color:$color-green;
+        }
+
         .dashed_text {
             margin-top:0;
             margin-bottom:0;
@@ -182,9 +195,9 @@ h4 {
             text-transform: none;
             background-color: $color-white;
             color: $color-dark;
-            padding:40px 40px 0 40px;
+            padding:40px 10px 30px 10px;
             margin-bottom:0;
-            font-weight:400;
+            font-weight:300;
         }
     }
     
@@ -198,6 +211,9 @@ h4 {
 }
 
 .info-cards {
+    margin-top:20px;
+    margin-bottom:20px;
+
     .overlay {
         display: block;
         background-size: cover;
@@ -209,8 +225,7 @@ h4 {
 
 .card-transparent, .card-white, .card-grey {
     width: 100%;
-    padding: 1em;
-    
+
     &:first-of-type {
         margin-top: 8px;
     } 
@@ -493,8 +508,17 @@ nav {
 footer {
 
     .dashed_text {
-        padding:0 !important;
+
+        padding-bottom:0 !important;
+
+        a {
+            img.img-footer {
+                max-width:100%;
+                width:100%;
+            }
+        }
     }
+
 
     .icon-padding {
         padding:0 5px;
@@ -507,32 +531,6 @@ footer {
         
         &:hover {
             color: $font-color-medium;
-        }
-    }
-    
-    .row {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items:  center;
-        align-items:          center;
-        -webkit-justify-content:  center;
-        justify-content:          center;
-        -webkit-flex-flow:  row wrap;
-        flex-flow:          row wrap;
-        
-        div {              
-            display:  -webkit-box;
-            display: -webkit-flex;
-            display:  -ms-flexbox;
-            display:         flex;
-            align-items:   center;
-            justify-content: left;
-            
-            @media(max-width: 767px) {
-                margin-bottom: 20px;
-            }
         }
     }
 }
@@ -604,11 +602,9 @@ footer {
 
 #page-intro {
     &.bg-container {
-        background: url('../png/bg.png') no-repeat center center;
-        background-size: cover;
-        
+
         h1 {
-            margin-top: 50px;
+            margin-top: 25px;
             
             @media screen and (max-width: 767px) {
                 margin-top: 36px;
@@ -627,7 +623,7 @@ footer {
     }
    
     .container {    
-        height: 350px;
+        height: 225px;
             
         .row {
             height: 90%; 
@@ -889,11 +885,10 @@ footer {
                     
                     a {
                         color: $color-dark-blue;
-                        font-weight: 600;
                     }
                    
                     a.chip, a.chip:hover {
-                        color: $font-color-white;
+                        color: $color-blue;
                     }
                     
                     ul, li {
@@ -1103,7 +1098,6 @@ footer {
     padding: 1em 1.5em;
     margin: 0.2em;
     display: inline-block;
-    border:1px solid $color-blue;
     font-weight:500;
 
     &.chip-red {
@@ -1112,11 +1106,14 @@ footer {
     
     &.chip-blue {
         background-color: $font-color-alt;
+        border:1px solid $color-blue;
+
     }
 
     &.chip-white {
         background-color: $font-color-white;
         color:$color-dark-blue;
+        border:1px solid $color-blue;
 
         &:hover {
           background-color: darken($font-color-alt, 6%);
@@ -1139,7 +1136,8 @@ footer {
         padding: 0.2em 0.5em;
         margin-right: 0.2em;
         font-size: 0.9em;
-        border-radius: 12px; 
+        background-color:$color-white;
+        border:1px solid $color-blue;
     }
 }
 
