@@ -1,0 +1,66 @@
+description = "One Pager Layout"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Diplohack Brussels - {{ this.page.title }}</title>
+    <!-- Meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diplohack Brussels, the hackathon focused on creating synergies between the skill sets of people from a wide variety of backgrounds, such as diplomats, developers, designers, NGOs etc.">
+    <meta name="keywords" content="Brussels, Diplohack, Diplohack Brussels, Open, Data, Open Data">
+    <meta name="author" content="Open Knowledge Belgium">
+    <meta property="og:title" content="{{ post.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url_full() }}" />
+    <meta property="og:image" content="http://diplohack.brussels/assets/png/logo-diplohack.png" />
+    <meta property="og:description" content="{{post.excerpt}}" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@EU2016NL">
+    <meta name="twitter:title" content="{{post.title}}">
+    <meta name="twitter:description" content="{{post.excerpt}}">
+    <meta name="twitter:image" content="http://diplohack.brussels/assets/png/logo-diplohack.png" />
+    <meta name="twitter:url" content="{{ url_full() }}" />
+    <link rel="icon" type="image/x-icon" href="{{ 'assets/favicon.ico'|theme }}" />
+    <link href="{{ 'assets/css/a4g.css'|theme }}" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Event",
+            "name" : "Diplohack Brussels 2016",
+            "startDate" : "2016-04-29T08:30",
+            "endDate" : "2016-04-30T18:00",
+            "url" : "http://diplohack.brussels",
+            "location" : {
+                "@type" : "Place",
+                "name" : "Council of the European Union Justus Lipsius Building",
+                "address": {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "Rue de la Loi  175",
+                    "addressLocality" : "Brussels, Belgium",
+                    "postalCode" : "1048"
+                }
+            }
+        }
+        </script>
+</head>
+<body>
+{% partial "hero-big" %}
+
+{% page %}
+
+{% partial "footer" %}
+
+<!-- Scripts -->
+<script src="{{ [
+            'assets/vendor/jquery/dist/jquery.min.js',
+            'assets/vendor/bootstrap/dist/js/bootstrap.min.js',
+            'assets/javascript/app.js',
+            'assets/vendor/pgwslider/pgwslider.min.js',
+            'assets/javascript/hackathon.js'
+        ]|theme }}"></script>
+
+{% placeholder scripts %}
+</body>
+</html>
