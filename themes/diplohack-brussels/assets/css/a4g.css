@@ -37,7 +37,6 @@ p {
   font-weight: 400; }
 
 h1 {
-  font-size: 3.7em;
   margin-bottom: 30px; }
 
 h2 {
@@ -569,18 +568,20 @@ footer {
           #news-content .container .news-post .news-post-content-container .news-post-content p.bottom-spacer {
             margin-bottom: 4em; }
         #news-content .container .news-post .news-post-content-container .news-post-content h1 {
-          font-size: 18px;
           padding: 0.5em 0;
           margin-top: 15px;
           margin-bottom: 0;
-          color: #9ac4f8; }
-        #news-content .container .news-post .news-post-content-container .news-post-content h2, #news-content .container .news-post .news-post-content-container .news-post-content h3 {
-          font-size: 18px;
+          color: #09d35f; }
+        #news-content .container .news-post .news-post-content-container .news-post-content h2 {
           padding: 0.5em 0;
           margin-top: 5px;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          color: #09d35f; }
         #news-content .container .news-post .news-post-content-container .news-post-content h3 {
-          font-size: 1em; }
+          color: #09d35f; }
+        #news-content .container .news-post .news-post-content-container .news-post-content h4 {
+          text-transform: none;
+          color: #09d35f; }
         #news-content .container .news-post .news-post-content-container .news-post-content a {
           color: #0b4ea2; }
         #news-content .container .news-post .news-post-content-container .news-post-content a.chip, #news-content .container .news-post .news-post-content-container .news-post-content a.chip:hover {
